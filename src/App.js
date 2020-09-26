@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
+import Regions from './components/regions/regions';
+import Region from './components/region/region';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App(){
+
+  const regList = [
+    "Тўрткўл тумани",
+    "Чимбой тумани",
+    "Амударё тумани",
+    "Беруний тумани",
+    "Қонликўл тумани",
+    "Шуманай тумани",
+    "Кегейли тумани",
+    "Хўжайли тумани",
+    "Тахиатош тумани",
+    "Бозатау тумани",
+    "Нукус тумани",
+    "Элликқалъа тумани",
+    "Қараўзак тумани",
+    "Муйноқ тумани",
+    "Қўнғирот тумани",
+    "Тахтакўпир тумани",
+    "Нукус шахар"
+  ]
+
+  return(
+    <div className="content">
+      <div className="table">
+        <div>
+          <Regions>
+            <Region name="Қорақалпоғистон Республикаси" sub={regList}/>
+          </Regions>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;

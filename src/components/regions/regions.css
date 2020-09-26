@@ -1,0 +1,32 @@
+.regions table th, th{
+    padding: 2px 5px;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+    min-width: 40px;
+    padding: 5px;
+    border: 1px solid black !important;
+}
+.regions th.v p{
+    writing-mode: vertical-rl;
+    transform: rotateY(180deg) rotateX(180deg);
+    padding: 0px !important;
+}
+.regions th.v {
+    max-height: 200px !important;
+    padding: 0px !important;
+}
+.regions  thead{
+    font-weight: bold;
+    background-color: #B8CCE4 !important;
+}
+.yl{
+    background-color: #FCD5B4;
+}
+
+.w-100p{
+    padding: 0px 50px;
+}
+.bl{
+    background-color: #B8CCE4;
+}

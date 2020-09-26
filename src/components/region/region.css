@@ -1,0 +1,14 @@
+.region{
+    min-width: 270px;
+}
+
+.regHead td{
+    border: 1px solid black !important;
+    background: #FCD5B4 !important;
+}
+.regHead td:first-child{
+    font-weight: Bold;
+}
+* td{
+    border: 1px solid black !important;
+}

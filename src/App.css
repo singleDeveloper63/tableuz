@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+html,body{
+  background: linear-gradient(135deg,lightblue,rgb(48, 79, 216)) no-repeat !important;
+  background-size: 100% 100%;
+}
+.table{
+  width: 94% !important;
+  margin: 20px auto;
+  background:linear-gradient(-135deg, rgb(0, 116, 100), rgb(0, 139, 182));
+  border-radius: 10px !important;
+  height: 95vh;
+  padding: 20px !important;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.4s);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table>div{
+  overflow: scroll;
+  height: 92vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  background: lightgray;
+  border-radius: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb{
+  background: rgb(0, 68, 255);
+  border-radius: 100px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td{
+  background: white;
+  padding: 5px;
+  border: 1px solid black !important;
 }
