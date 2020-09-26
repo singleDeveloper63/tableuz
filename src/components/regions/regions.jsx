@@ -21,7 +21,7 @@ function Regions({ children }){
                         <th rowSpan="4"> Корхона номи </th>
                         <th rowSpan="4"> Корхона рахбарининг телефони </th>
                         <th rowSpan="4"> Корхонанинг фаолият йўналиши </th>
-                        <th colSpan="31">Фаолият йўналиши (сохалари) </th>
+                        <th colSpan="32">Фаолият йўналиши (сохалари) </th>
                         <th colSpan="3">Импорт қилинган технологик ускунаси </th>
                         <th colSpan="3" className="yl">Технологик ускунаси (тўлиқ етиб келган)</th>
                         <th colSpan="3">Технологик ускунаси (қисман етиб келган)</th>
@@ -30,7 +30,7 @@ function Regions({ children }){
                         <th colSpan="36" className="yl"> Технологик ускунаси (тўлиқ етиб келган)лари  бўйича тўлдирилади.</th>
                     </tr>
                     <tr>
-                        <th colSpan="10">Саноат</th>
+                        <th colSpan="11">Саноат</th>
                         <th colSpan="3">Хизмат кўрсатиш</th>
                         <th colSpan="8"> Қишлоқ, ўрмон ва балиқ хўжалиги сохаси</th>
                         <th colSpan="3"> Соғликни сақлаш ва ижтимоий хизматлар кўрсатиш	</th>
@@ -66,7 +66,8 @@ function Regions({ children }){
                     </tr>
                     <tr>
                         <th className="v" rowSpan="2"><p>Тўқимачилик ва тикув-трикотаж саноати соҳаси</p></th>
-                        <th className="v" rowSpan="2"><p>Чарм саноати соҳаси	Кон-металлургия соҳаси</p></th>
+                        <th className="v" rowSpan="2"><p>Чарм саноати соҳаси</p></th>
+                        <th className="v" rowSpan="2"><p>Кон-металлургия соҳаси</p></th>
                         <th className="v" rowSpan="2"><p>Кимё саноати соҳаси	</p></th>
                         <th className="v" rowSpan="2"><p>Электротехникани ривожлантириш соҳаси</p></th>
                         <th className="v" rowSpan="2"><p>Автомобиль саноати соҳаси</p></th>
