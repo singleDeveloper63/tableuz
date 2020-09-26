@@ -7,7 +7,7 @@ function Region({name,sub}){
     for(var i = 0; i<sub.length;i++){
         subRegCount.push(i)
     }
-    for(var j = 1;j<90;j++){
+    for(var j = 1;j<91;j++){
         count.push(j)
     }
 
@@ -31,7 +31,7 @@ function Region({name,sub}){
                                 count.map((subreg,subindex)=>{
                                     return (
                                         <React.Fragment key={subindex}>
-                                            { subreg<89 && <td contentEditable></td> }
+                                            { subreg<90 && <td contentEditable></td> }
                                         </React.Fragment>
                                     )
                                     
