@@ -1,13 +1,13 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/boxicons/css/boxicons.min.css';
 
 html,body{
-  background: linear-gradient(135deg,lightblue,rgb(48, 79, 216)) no-repeat !important;
-  background-size: 100% 100%;
+  background: #eee;
 }
 .table{
   width: 94% !important;
   margin: 20px auto;
-  background:linear-gradient(-135deg, rgb(0, 116, 100), rgb(0, 139, 182));
+  background-color: white;
   border-radius: 10px !important;
   height: 95vh;
   padding: 20px !important;
@@ -16,22 +16,35 @@ html,body{
 
 .table>div{
   overflow: scroll;
+  border: 1px solid gray;
   height: 92vh;
 }
 
 ::-webkit-scrollbar{
   width: 10px;
   height: 10px;
-  background: lightgray;
+  background: transparent;
+  border: none !important;
   border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: rgb(0, 68, 255);
+  background: rgb(46, 94, 226);
   border-radius: 100px;
 }
 td{
   background: white;
+  transition: 0.2s;
+  text-align: center;
   padding: 5px;
   border: 1px solid black !important;
+}
+
+td:focus{
+  background: lightskyblue;
+}
+
+.header td{
+  background: #F4B082 !important;
+  font-weight: bold;
 }

@@ -18,15 +18,15 @@
 }
 .regions  thead{
     font-weight: bold;
-    background-color: #B8CCE4 !important;
+    background: rgb(178, 230, 95);
 }
 .yl{
-    background-color: #FCD5B4;
+    background-color: #8bdff8;
 }
 
 .w-100p{
     padding: 0px 50px;
 }
 .bl{
-    background-color: #B8CCE4;
+    background-color: #b9f333;
 }

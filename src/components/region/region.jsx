@@ -1,48 +1,62 @@
-import React from 'react';
+import React , { useEffect , useState } from 'react';
 import './region.css';
 
-function Region({name,sub}){
-    let count = [];
-    let subRegCount = [];
-    for(var i = 0; i<sub.length;i++){
-        subRegCount.push(i)
+
+function Region({name,sub, onChange , districtsOpen ,number , canEditable }){
+    const cols = [];
+    for(let i = 0; i<91; i++){
+        cols.push(i);
     }
-    for(var j = 1;j<91;j++){
-        count.push(j)
+    const rows = sub.length;
+    let dRows = [];
+    const dCols = cols.slice(0,cols.length-3);
+    for(var i=0;i<rows;i++){
+        dRows.push(dCols);
     }
+    const [districtsData,setDistrictsData] = useState(dRows);
+    useEffect(()=>{
+        console.log(districtsData.length);
+    },[])
 
     return(
         <React.Fragment>
             <tr className="regHead">
                 {
-                    count.map((item,index)=>{
-                        return(
-                            <td key={index}> {item === 1 && name} </td>
-                        )
+                    cols.map((item,index)=>{
+                        return <td key={index}> { item === 0 ? number : item === 1 && name} </td>
                     })
                 }
             </tr>
             {
-                subRegCount.map((item,index) => {
+                sub.map((item,index)=>{
                     return(
-                        <tr key={index}>
-                            <td className="region"> {sub[item]} </td>
-                            {
-                                count.map((subreg,subindex)=>{
-                                    return (
-                                        <React.Fragment key={subindex}>
-                                            { subreg<90 && <td contentEditable></td> }
-                                        </React.Fragment>
-                                    )
-                                    
-                                })
-                            }
-                        </tr>
+                        <MakeCells onDistrictChange={ ()=>console.log()} isOpen={canEditable} district={item} order={index+1} key={index} />
                     )
                 })
             }
         </React.Fragment>
     )
+
+    function MakeCells({district , order , onDistrictChange}){
+        let arr = cols.slice(0,cols.length - 3);
+    
+
+        return(
+            <tr className={ canEditable ? "visibleRow" : "inVisibleRow" }>
+                <td> {order} </td>
+                <td> </td>
+                <td className="region" > {district} </td>
+                {
+                    arr.map((item,index)=>{
+                        return <td contentEditable={true} key={index} onKeyUp={ e => {
+                            arr[index] = e.currentTarget.innerText;
+                            onDistrictChange(arr,order-1,index)
+                        }}></td>
+                    })
+                }
+            </tr>
+        )
+    }
 }
 
 export default Region;

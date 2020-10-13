@@ -2,13 +2,34 @@
     min-width: 270px;
 }
 
+.regHead:hover>td{
+    background: rgb(5, 221, 102) !important;
+    color: white;
+}
+
 .regHead td{
     border: 1px solid black !important;
-    background: #FCD5B4 !important;
+    background: #85eeb4 !important;
+    transition: .3s !important;
 }
-.regHead td:first-child{
+.regHead td:nth-child(2){
     font-weight: Bold;
+    min-width: 200px;
 }
 * td{
     border: 1px solid black !important;
+}
+* tr{
+    transition: .3s !important;
+}
+.rowToggler{
+    cursor: pointer;
+}
+
+.inVisibleRow{
+    display: none;
+}
+
+.visibleRow{
+    display: table-row;
 }

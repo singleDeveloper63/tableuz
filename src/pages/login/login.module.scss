@@ -1,0 +1,86 @@
+.login{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-variant: small-caps;
+
+    form{
+        background: white;
+        padding: 40px;
+        width: 500px;
+        box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.3);
+        
+        img{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        h1{
+            text-align: center;
+            font-weight: 900;
+            text-transform : lowercase;
+            color: lightseagreen;
+        }
+
+        &>div{
+            margin: 14px 0px;
+
+            label{
+                font-weight: 500;
+                font-size: 16px;
+                color: lightseagreen;
+            }
+
+            span{
+                padding: 10px;
+                height: 40px;
+                transition: .3s;
+                border-bottom: 2px solid lightseagreen;
+                color: lightseagreen;
+                font-weight: 800 !important;
+
+            }
+
+            input{
+                box-shadow: none !important;
+                font-variant: normal;
+                border-radius: 0px !important;
+                background: transparent;
+                border: none;
+                margin: 0px auto;
+                transition: .3s;
+                border-bottom: 2px solid lightseagreen !important;
+            }
+        }
+
+        button{
+            font-size: 20px;
+            margin-top: 30px;
+            width: 100%;
+            text-transform: uppercase;
+            padding: 5px;
+            border: none;
+            background: lightseagreen;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:disabled{
+                background: #ddd;
+                color: #777;
+                cursor: no-drop;
+            }
+
+            i{
+                margin: 2px 5px;
+                margin-top: 4px;
+            }
+        }
+    }
+}

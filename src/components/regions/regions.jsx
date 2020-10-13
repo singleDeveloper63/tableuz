@@ -4,7 +4,7 @@ import './regions.css';
 function Regions({ children }){
 
     const arr = [];
-    for (let index = 1; index < 91; index++) {
+    for (let index = 1; index < 92; index++) {
         arr.push(index)
         
     }
@@ -28,6 +28,7 @@ function Regions({ children }){
                         <th colSpan="3"> Сотишни режалаштираётган ёки суд  тартибида кўриб чиқилаётган муаммоси мавжуд </th>
                         <th colSpan="3">Технологик ускуна бўлмаган (эхтиёт қисим  ва бошқа)</th>
                         <th colSpan="36" className="yl"> Технологик ускунаси (тўлиқ етиб келган)лари  бўйича тўлдирилади.</th>
+                        <th rowSpan="4" className="yl"> Шу тартибда белгиланади 1-Ишга тушган 2-Ишга тушмаган</th>
                     </tr>
                     <tr>
                         <th colSpan="11">Саноат</th>
