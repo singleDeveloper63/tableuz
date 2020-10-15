@@ -1,0 +1,44 @@
+.director{
+    font-size: 12px;
+    width: 1100px !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 70px 3px rgba(0,0,0,0.3);
+    margin: 20px auto;
+}
+.director .title{
+    width: 200px !important;
+}
+.director thead{
+    background: linear-gradient(135deg,rgb(0, 209, 94),rgb(8, 110, 206));
+    color: white;
+}
+.director th,td{
+    border: 1px solid lightgray !important;
+    max-width: 30px;
+    min-width: 30px;
+}
+.all{
+    font-weight: 700;
+}
+
+.directorpage{
+    overflow: scroll;
+    padding: 40px;
+}
+
+.download{
+    position: fixed;
+    top: 0px;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    background: rgb(25, 124, 238);
+    font-size: 12px;
+    border-radius: 0px 0px 10px 10px;
+    left: 10px;
+    width: 140px;
+}
+
+.download:last-of-type{
+    left: 160px;
+}
