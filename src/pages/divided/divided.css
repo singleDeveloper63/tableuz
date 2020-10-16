@@ -14,6 +14,7 @@
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.2);
     border-radius: 10px;
     height: 94%;
+    margin-bottom: 70px;
 }
 .divided thead{
     background: linear-gradient(135deg,rgb(0, 209, 94),rgb(8, 110, 206));
