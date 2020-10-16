@@ -2,7 +2,7 @@
 @import '../node_modules/boxicons/css/boxicons.min.css';
 
 html,body{
-  background: #eee;
+  background: #ddd !important;
 }
 .table{
   width: 94% !important;
