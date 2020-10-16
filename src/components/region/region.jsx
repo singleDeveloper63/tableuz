@@ -80,7 +80,13 @@ function Region({name,sub, onChange , onAdd , districtsOpen ,number , canEditabl
                         }
                     </select>
                 </td>
-                <td colSpan={arr.length}></td>
+                {
+                    arr.map(item =>{
+                        return(
+                            <td key={item}></td>
+                        )
+                    })
+                }
             </tr>
         )
     }

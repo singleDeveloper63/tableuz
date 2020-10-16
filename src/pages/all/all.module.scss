@@ -1,5 +1,6 @@
 .all{
     padding: 20px;
+    padding-bottom: 70px;
 
     &_content{
         width: 100%;
@@ -9,5 +10,13 @@
         background: white !important;
         border-radius: 10px;
         box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+    }
+
+    thead{
+        background: rgb(46, 231, 129);
+    }
+    th,td{
+        border: 1px solid gray !important;
+        font-size: 12px !important;
     }
 }

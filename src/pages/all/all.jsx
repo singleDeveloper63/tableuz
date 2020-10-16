@@ -11,9 +11,6 @@ export default function All(){
   const [table,setTable] = useState([]);
   const user = JSON.parse(localStorage.getItem("user"));
   const [city,setCity] = useState(user.city);
-  useEffect(()=>{
-    console.log(city)
-  })
   return(
     <div className={st.all}>
       <div className={st.all_content}>

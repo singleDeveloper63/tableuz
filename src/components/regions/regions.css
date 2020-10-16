@@ -5,7 +5,7 @@
     text-align: center;
     min-width: 40px;
     padding: 5px;
-    border: 1px solid black !important;
+    border: 1px solid gray !important;
 }
 .regions th.v p{
     writing-mode: vertical-rl;
@@ -18,15 +18,8 @@
 }
 .regions  thead{
     font-weight: bold;
-    background: #81F7E7;
-}
-.yl{
-    background-color: #8bdff8;
 }
 
 .w-100p{
     padding: 0px 50px;
-}
-.bl{
-    background-color: #b9f333;
 }
