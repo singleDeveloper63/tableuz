@@ -4,7 +4,6 @@ import 'bootstrap/dist/js/bootstrap';
 import 'popper.js';
 import { All , Login ,Director , Divided} from './pages';
 import Navigation from './components/navigation/navigation';
-
 import { Switch , Route } from 'react-router-dom';
 
 function App(){

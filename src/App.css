@@ -1,6 +1,24 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/boxicons/css/boxicons.min.css';
 
+@font-face{
+  font-family: Light;
+  src: url(./assets/Poppins-Light.ttf);
+}
+
+@font-face{
+  font-family: Bold;
+  src: url(./assets/Poppins-SemiBold.ttf);
+}
+
+table{
+  font-family: Light;
+}
+
+.loader{
+  font-family: Bold ;
+}
+
 html,body{
   background: #ddd !important;
 }
