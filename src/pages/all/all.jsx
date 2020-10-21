@@ -9,7 +9,6 @@ import Loader from '../../components/loader/loader';
 export default function All(){
   const [request , setRequest] = useState(true);
   const [printMode, setPrintMode] = useState(false);
-  const [table,setTable] = useState([]);
   const [data,setData] = useState([]);
   const user = JSON.parse(localStorage.getItem("user"));
   const [city,setCity] = useState(18);
@@ -23,7 +22,7 @@ export default function All(){
   },[])
 
   useEffect(()=>{
-    data.forEach( item =>console.log(`${item.districts.length}`))
+    console.log(data[0])
   },[data])
 
   function compare( a, b ) {
@@ -44,7 +43,7 @@ export default function All(){
     <div className={st.all}>
       <div className={st.all_content}>
         <Regions>
-          <Region data={data[3]} number={1}/>
+          <Region data={data[0]} number={1}/>
         </Regions>
       </div>
     </div>
